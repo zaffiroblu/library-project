@@ -1,0 +1,43 @@
+$primary: #c27c34;
+$secondary: #b9babc;
+$success: #169c0e;
+
+// import bootstrap
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+
+html,
+body {
+	margin: 0%;
+	height: 100%;
+}
+
+.top {
+	background-color: white;
+	margin: 2%;
+	padding: 3%;
+}
+
+#page-body {
+	background-image: url('../images/cameron-stewart-jo9eYA750V0-unsplash.jpeg');
+	background-size: cover;
+	height: 100%;
+}
+
+button {
+	margin: 1%;
+	margin-left: 5%;
+	padding: 3%;
+}
+
+.card {
+	margin: 3%;
+}
+
+.card-body {
+	display: flex;
+	flex-direction: column;
+}
+
+.dark-background {
+	background-color: #169c0e;
+}

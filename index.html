@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Masterpiece Library</title>
+		<link href="css/main.min.css" rel="stylesheet" />
+	</head>
+	<body>
+		<div class="top">
+			<h1 class="text-primary">The Library of Great Masterpieces</h1>
+		</div>
+		<div id="page-body">
+			<button
+				type="button"
+				class="btn btn-secondary"
+				data-bs-toggle="modal"
+				data-bs-target="#exampleModal"
+				data-bs-whatever="@mdo"
+			>
+				Add a New Piece
+			</button>
+			<div
+				class="modal fade"
+				id="exampleModal"
+				tabindex="-1"
+				aria-labelledby="exampleModalLabel"
+				aria-hidden="true"
+			>
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="exampleModalLabel">
+								Add to the collection
+							</h5>
+							<button
+								type="button"
+								class="btn-close"
+								data-bs-dismiss="modal"
+								aria-label="close"
+							></button>
+						</div>
+						<div class="modal-body">
+							<form>
+								<div class="mb-3">
+									<label
+										for="title-input"
+										class="col-form-label"
+										>Title of piece:</label
+									>
+									<input
+										type="text"
+										class="form-control"
+										id="title-input"
+									/>
+								</div>
+								<div class="mb-3">
+									<label
+										for="author-input"
+										class="col-form-label"
+										>Author:</label
+									>
+									<input
+										type="text"
+										class="form-control"
+										id="author-input"
+									/>
+								</div>
+								<div class="mb-3">
+									<label
+										for="year-input"
+										class="col-form-label"
+										>Year published:</label
+									>
+									<input
+										type="text"
+										class="form-control"
+										id="year-input"
+									/>
+								</div>
+								<div class="mb-3">
+									<label
+										for="pages-input"
+										class="col-form-label"
+										>Number of pages:</label
+									>
+									<input
+										type="text"
+										class="form-control"
+										id="pages-input"
+									/>
+								</div>
+								<div class="mb-3">
+									<label
+										for="wiki-input"
+										class="col-form-label"
+										>Wikipedia link:</label
+									>
+									<textarea
+										class="form-control"
+										id="wiki-input"
+									></textarea>
+								</div>
+							</form>
+						</div>
+						<div class="modal-footer">
+							<button
+								type="submit"
+								class="btn btn-primary"
+								data-bs-dismiss="modal"
+								onclick="addBookToLibrary()"
+							>
+								Add
+							</button>
+							<button
+								type="button"
+								class="btn btn-secondary"
+								data-bs-dismiss="modal"
+							>
+								Cancel
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<script
+				src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+				integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+				crossorigin="anonymous"
+			></script>
+			<script src="library.js"></script>
+		</div>
+	</body>
+</html>

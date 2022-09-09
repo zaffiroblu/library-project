@@ -1,0 +1,26 @@
+{
+  "name": "library-project",
+  "version": "1.0.0",
+  "description": "Jen's incredible library project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zaffiroblu/library-project.git"
+  },
+  "keywords": [
+    "library",
+    "books"
+  ],
+  "author": "Jen Shivel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zaffiroblu/library-project/issues"
+  },
+  "homepage": "https://github.com/zaffiroblu/library-project#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.0"
+  }
+}
